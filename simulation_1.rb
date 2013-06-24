@@ -9,7 +9,7 @@ population_range = 10..600
 data = {}
 population_range.step(10).each do |population_size|
     Person.population.clear
-    population_size.times {Person.population << Person.new(frequency, use_duration)}
+    population_size.times { Person.population << Person.new(frequency, use_duration) }
     data[population_size] = []
     restroom = Restroom.new facilities_per_restroom
     DURATION.times do |t|
