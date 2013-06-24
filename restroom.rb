@@ -1,3 +1,5 @@
+DURATION = 540
+
 class Restroom
     attr_reader :queue
     attr_reader :facilities
