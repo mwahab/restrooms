@@ -13,7 +13,7 @@ class Restroom
     end
 
     def enter(person)
-        unoccupied_facility = @facilities.find { |facility| not facility.occupied?}
+        unoccupied_facility = @facilities.find { |facility| not facility.occupied? }
         if unoccupied_facility
             unoccupied_facility.occupy person
         else
